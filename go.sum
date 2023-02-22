@@ -47,6 +47,8 @@ github.com/go-git/go-git-fixtures/v4 v4.3.1 h1:y5z6dd3qi8Hl+stezc8p3JxDkoTRqMAlK
 github.com/go-git/go-git-fixtures/v4 v4.3.1/go.mod h1:8LHG1a3SRW71ettAD/jW13h8c6AqjVSeL11RAdgaqpo=
 github.com/go-git/go-git/v5 v5.5.2 h1:v8lgZa5k9ylUw+OR/roJHTxR4QItsNFI5nKtAXFuynw=
 github.com/go-git/go-git/v5 v5.5.2/go.mod h1:BE5hUJ5yaV2YMxhmaP4l6RBQ08kMxKSPD4BlxtH7OjI=
+github.com/go-micro-v4-demo/user v0.0.0-20230222154440-60604d40cb6e h1:H6SZ/FHkvLiyrFSRWnlRexbNZqgjtyt49AmBwHy3uEU=
+github.com/go-micro-v4-demo/user v0.0.0-20230222154440-60604d40cb6e/go.mod h1:zlYO22fItQWh01AjlTYRMTN1yVHbppchaShAQGnGBFU=
 github.com/gobwas/httphead v0.1.0 h1:exrUm0f4YX0L7EBwZHuCF4GDp8aJfVeBrlLQrs6NqWU=
 github.com/gobwas/httphead v0.1.0/go.mod h1:O/RXo79gxV8G+RqlR/otEwx4Q36zl9rqC5u12GKvMCM=
 github.com/gobwas/pool v0.2.1 h1:xfeeEhW7pwmX8nuLVlqbzVc7udMDrwetjEv+TZIz1og=

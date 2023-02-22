@@ -2,19 +2,24 @@ package handler
 
 import (
 	"context"
+	pb "github.com/go-micro-v4-demo/helloworld/proto"
+	userPb "github.com/go-micro-v4-demo/user/proto"
+	"go-micro.dev/v4/logger"
 	"io"
 	"time"
-
-	"go-micro.dev/v4/logger"
-
-	pb "github.com/go-micro-v4-demo/helloworld/proto"
 )
 
-type Helloworld struct{}
+type Helloworld struct {
+	UserService userPb.UserService
+}
 
 func (e *Helloworld) Call(ctx context.Context, req *pb.CallRequest, rsp *pb.CallResponse) error {
+	res, err := e.UserService.Call(ctx, &userPb.CallRequest{Name: "gsmini@sina.cn"})
+	if err != nil {
+		logger.Infof("Received userService.Call request: %v", err)
+	}
 	logger.Infof("Received Helloworld.Call request: %v", req)
-	rsp.Msg = "Hello " + req.Name
+	rsp.Msg = "Hello " + res.Msg
 	return nil
 }
 

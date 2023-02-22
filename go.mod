@@ -2,7 +2,10 @@ module github.com/go-micro-v4-demo/helloworld
 
 go 1.18
 
-require go-micro.dev/v4 v4.9.0
+require (
+	github.com/go-micro-v4-demo/user v0.0.0-20230222154440-60604d40cb6e
+	go-micro.dev/v4 v4.9.0
+)
 
 require (
 	github.com/Microsoft/go-winio v0.6.0 // indirect
